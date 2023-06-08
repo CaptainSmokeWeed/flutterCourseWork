@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "567442697957",
+    "project_id": "fluttercoursework",
+    "storage_bucket": "fluttercoursework.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567442697957:android:e86d1b75aa0588a93a6e0c",
+        "android_client_info": {
+          "package_name": "com.example.flutter_course_work"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567442697957-59o4iilme70g2ap4a5p34nfonpo11k70.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVLa805hyA50yz-1S6zW1UOZctLmyslHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567442697957-59o4iilme70g2ap4a5p34nfonpo11k70.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
