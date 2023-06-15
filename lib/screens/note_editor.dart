@@ -20,6 +20,7 @@ class _NoteEditorScreenState extends State<NoteEditorScreen>{
   TextEditingController _titleController = TextEditingController();
   TextEditingController _mainController = TextEditingController();
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

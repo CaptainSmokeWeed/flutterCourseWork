@@ -53,6 +53,7 @@ class _HomeScreenState extends State<HomeScreen>{
               }
               return Text("Здесь нет записок", style: GoogleFonts.nunito(color: Colors.white),);
 
+
             }
 
           )

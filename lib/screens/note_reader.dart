@@ -8,6 +8,7 @@ class NoteReaderScreen extends StatefulWidget{
   State<NoteReaderScreen> createState() => _NoteReaderScreenState();
 }
 
+
 class _NoteReaderScreenState extends State<NoteReaderScreen>{
   @override
   Widget build(BuildContext context) {
