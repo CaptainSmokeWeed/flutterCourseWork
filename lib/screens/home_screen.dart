@@ -17,21 +17,20 @@ class _HomeScreenState extends State<HomeScreen>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      backgroundColor: AppStyle.mainColor,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0.0,
         title: Text("Записки"),
         centerTitle: true,
-        backgroundColor: AppStyle.bgColor,
+        backgroundColor: Colors.blueAccent,
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Ваши записки", style: GoogleFonts.roboto(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22),
+          Text(" Ваши записки", style: GoogleFonts.roboto(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 22),
           ),
-          SizedBox(
-            height: 20,),
+          SizedBox(height: 20,),
           Expanded(
           child: StreamBuilder<QuerySnapshot>(
             stream: FirebaseFirestore.instance.collection("notes").snapshots(),
@@ -61,10 +60,12 @@ class _HomeScreenState extends State<HomeScreen>{
         ],
       ),
       floatingActionButton: FloatingActionButton.extended(
+        backgroundColor: Colors.blueAccent,
         onPressed: (){
           Navigator.push(context, MaterialPageRoute(builder: (context)=> NoteEditorScreen()));
         },
         label: Text("Добавить Записку"),
+
         icon: Icon(Icons.add),
       ),
 
