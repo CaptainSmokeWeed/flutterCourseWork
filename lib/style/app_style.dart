@@ -28,3 +28,41 @@ class AppStyle{
  static TextStyle dateTitle =
  GoogleFonts.roboto(fontSize: 13, fontWeight: FontWeight.w500);
 }
+
+TextStyle get subHeadingStyle{
+ return GoogleFonts.lato(
+  textStyle: const TextStyle(
+   fontSize: 24,
+   fontWeight: FontWeight.bold,
+   color: Colors.grey
+  )
+ );
+}
+TextStyle get titleStyle{
+ return GoogleFonts.lato(
+     textStyle: const TextStyle(
+     fontSize: 16,
+     fontWeight: FontWeight.bold,
+     color: Colors.black
+   )
+ );
+}
+TextStyle get subTitleStyle{
+ return GoogleFonts.lato(
+     textStyle: const TextStyle(
+         fontSize: 14,
+         fontWeight: FontWeight.bold,
+         color: Colors.grey
+     )
+ );
+}
+
+TextStyle get headingStyle{
+ return GoogleFonts.lato(
+     textStyle: const TextStyle(
+         fontSize: 30,
+         fontWeight: FontWeight.bold
+
+     )
+ );
+}
