@@ -198,14 +198,14 @@ class _AddTaskPageState extends State<AddTaskPage> {
     children: [
       Text("Цвет", style: titleStyle,),
       SizedBox(height: 8,),
+
       Wrap(
-        children: List<Widget>.generate(
-          3,
-              (int index){
+        children: List<Widget>.generate(3, (int index){
             return GestureDetector(
               onTap: (){
                 setState(() {
                   _selectedColor=index;
+
                 });
               },
               child: Padding(
@@ -213,7 +213,8 @@ class _AddTaskPageState extends State<AddTaskPage> {
                 child: CircleAvatar(
                   radius: 14,
                   backgroundColor: index==0?Colors.indigoAccent:index==1?Colors.amber:Colors.red,
-                  child: _selectedColor == index?Icon(Icons.done,
+                  child: _selectedColor == index?Icon(
+                    Icons.done,
                     color:Colors.white,
                     size: 16,
                   ):Container(),
