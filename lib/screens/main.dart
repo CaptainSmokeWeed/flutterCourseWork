@@ -11,7 +11,6 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 Future<void> main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await DBheler.initDb();
-  //await GetStorage.init();
   await Firebase.initializeApp();
   runApp(const MyApp());
 }

@@ -24,14 +24,13 @@ class StartScreen extends StatefulWidget{
   State<StartScreen> createState() => _StartScreenState();
 }
 
-  getTasks(){}
 class _StartScreenState extends State<StartScreen> {
   DateTime _selectedDate = DateTime.now();
   final _taskController = Get.put(TaskController());
 
   @override
   Widget build(BuildContext context) {
-
+    _taskController.getTasks();
     return Scaffold(
         backgroundColor: Colors.white,
         appBar: _addAppBar(),
